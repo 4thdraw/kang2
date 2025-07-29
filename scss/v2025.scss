@@ -6,11 +6,29 @@
     }
     .searchbox{
         width: 450px;
+        input{
+            line-height: 26px;
+            margin-top:4px;
+        }
+
+        ::placeholder{
+            color: #9f9f9f;
+            font-size: 17px;
+            
+        }
+
         
         @media screen and (max-width: 1080px) {
             width: auto;
             min-width:33vw;        
             
+        }
+        a{
+            color: #9f9f9f !important;
+            svg{
+                width:21px;
+                height:21px;
+            }
         }
     }
 }
