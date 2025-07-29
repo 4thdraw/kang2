@@ -6,6 +6,8 @@
     <title>강화매트 고객센터 1661-8849</title>
     <link rel="stylesheet" href="./scss/common.css">
     <link rel="stylesheet" href="./scss/v2025.min.css">
+	<link rel="stylesheet" href="./vendor/swiper/swiper-bundle.min.css?ver=8" />
+    <script src="./vendor/swiper/swiper-bundle.min.js?ver=8"></script>
 </head>
 <body>
     <header id="hd">
@@ -16,7 +18,7 @@
                 <strong class="fw500">바닥재 판매 · 시공전문 </strong>
             </p>
         </div>
-        <div class="max-width mx-auto d-flex justify-content-between align-items-center py-4"> 
+        <div class="max-width mx-auto d-flex justify-content-between align-items-center gnbwrap"> 
             <h1 class="w-0"><a href="/index_2025.html">                   
                
 				<svg width="158" height="63" viewBox="0 0 158 63" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +62,7 @@
 					</defs>
 				</svg>
             </a></h1>
-            <div class="searchbox border rounded-4 px-3 py-2 border-gray bg-white shadow-sm">
+            <div class="searchbox border rounded-3 px-3 py-1 border-gray bg-white shadow-sm">
                 
 				<form method="GET" id="topFrm" name="topFrm" class="d-flex align-items-center " action="../product/product_search.php" onSubmit="teSearch(); return false;">				
 					<input type="text" name="ts" id="ts" class='border-0 flex-grow-1 ' placeholder="검색어를 입력해주세요"  maxlength="50">
@@ -75,28 +77,33 @@
             </div>
             <h2 class="w-0 d-flex justify-content-end text-nowrap fs-30 fw400 align-items-center gap-1">
                 고객센터
-                <strong class='fw700 active-color fs-35'>
+                <strong class='fw700 active-sub-color fs-35'>
                     1661-8849
                 </strong>
             </h2>
         </div>
         <!--php 링크 실행 -->
 		
-			<div class="menu d-flex justify-content-between align-items-center border-top border-bottom  ">
-                <ul class="mx-auto max-width navilist fs-22">
-                      <li id="allmenu" class="navili"><a href="#allNavi"><i><svg 
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="28.5px" height="27.5px">
-                       <path fill-rule="evenodd"  stroke="rgb(42, 42, 42)" stroke-width="7px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(83, 84, 86)"
-                        d="M3.500,20.015 L3.500,18.557 L20.986,18.557 L20.986,20.015 L3.500,20.015 ZM3.500,11.271 L20.986,11.271 L20.986,12.729 L3.500,12.729 L3.500,11.271 ZM3.500,3.985 L20.986,3.985 L20.986,5.443 L3.500,5.443 L3.500,3.985 Z"/>
-                       </svg></i></a></li>
+			<div class="menu  border-top border-bottom  ">
+                <ul class="mx-auto max-width py-3 navilist fw600 fs-20 d-flex justify-content-between align-items-center">
+                      <li id="allmenu" class="navili">
+						<a href="#allNavi" class="d-flex flex-column align-items-center" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="allNavi">
+							
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<line x1="3" y1="12" x2="21" y2="12"></line>
+								<line x1="3" y1="6" x2="21" y2="6"></line>
+								<line x1="3" y1="18" x2="21" y2="18"></line>
+							</svg>
+								<span class="visually-hidden">전체메뉴</span>
+							
+						</a>
+					  </li>
                       <li class="navili"><a href="">제품보기</a></li>
                       <li class="navili"><a href="">공간별추천</a></li>
                       <li class="navili"><a href="">시공갤러리</a></li>
                       <li class="navili"><a href="">시공가이드</a></li>
                       <li class="navili"><a href="">주문제작</a></li>
-                      <li class="navili"><a href="">견적문의</a></li>
+                      <li class="navili"><a href="" class="orange-color">견적문의</a></li>
                 </ul>
 				
 			</div>
@@ -111,16 +118,43 @@
 				}
 				document.getElementById('topFrm').submit();
 			}
-			</script>
-		
-
-	
-
-		  
-			
-			
-	
+			</script>	
   </div>
 <!--상단-->
+<div class="content" id="main_banner">
+  <div class="main_swiper_2025">
+	<div class="swiper h-100">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide companyswiper">
+				<div class="max-width d-flex mx-auto h-100">
+					<div class="active-bg-90 d-flex flex-column justify-content-center text-white  px-4">
+						<p class="mb-2">20년경력, 누적시공 4500건이상</p>
+						<h2 class="fs-50 fw700 mb-4 line-height-1">바닥재 전문기업 강화카페트매트</h2>
+						<p class="fs-20 mb-4 line-height-1-3">경쟁력 있는 제품, 합리적인 가격,<br>
+							최고의 퀄리티를 약속합니다.</p>
+							<div class="btnwrap d-flex gap-2">
+								<a href="../product/product_list.php" class="btn bg-white rounded-pill px-3 px-2">회사소개 바로가기</a>
+								<a href="../product/product_custom.php" class="btn orange-bg text-white rounded-pill px-3 px-2">1661-8849</a>
+
+							</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="swiper-slide eventswiper active-bg">
+				<div class="max-width d-flex">
+
+				</div>
+			</div>
+			<div class="swiper-slide qnaswiper orange-bg">
+				<div class="max-width d-flex">
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+  </div>
+</div>
 </body>
 </html>
