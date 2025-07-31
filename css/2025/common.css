@@ -5,7 +5,8 @@
     --blue--origin : #0053a0;
     --orange-origin : #f7941d;
     --black--origin : #2a2a2a;
-    --gray--origin : #bababa;
+    /* --gray--origin : #bababa; */
+    --gray--origin : #747474;
 
     --blue--origin--50 : #0053a050;
     --orange-origin--50 : #f7941d50;
@@ -33,7 +34,7 @@
     --font-family-kr : "Pretendard";
     --font-family-en : "Pretendard";  
     
-    --max-width : 1240px;
+    --max-width : 1280px;
 
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -338,9 +339,46 @@ a{
     float: none !important;
 }
 
+/* 글자색 */
+
 .active-color{
     color: var(--blue--origin) !important;
 }
+
+.active-sub-color{
+    color: var(--blue--text) !important;
+}
+.orange-color{
+    color: var(--orange-origin) !important;
+}
+
+
+.gray-origin{
+    color: var(--gray--origin) !important;
+}
+
+.gray-text{
+    color: var(--gray--text) !important;
+}
+.gray-text2{
+    color: var(--gray--light) !important;
+}
+.gray-text3{
+    color: var(--gray--s-light) !important;
+}
+.gray-text4{
+    color: var(--gray--m-light) !important;
+}
+
+.gray-dark{
+    color: var(--gray--origin) !important;
+}
+
+.basic-text{
+    color: var(--black--text) !important;
+}
+
+/* 배경색 */
 .active-bg{
     background-color: var(--blue--origin) !important;
 }
@@ -353,19 +391,25 @@ a{
 .active-bg-90{
     background-color: var(--blue--origin--90) !important;
 }
-
-.active-sub-color{
-    color: var(--blue--text) !important;
-}
-.orange-color{
-    color: var(--orange-origin) !important;
-}
 .orange-bg{
     background-color: var(--orange-origin) !important;
 }
+.gray-bg{
+    background-color: var(--gray--light) !important;
+}
+
 .max-width{
     max-width: var(--max-width) !important;
     
+}
+
+
+
+/* 고정너비버튼 */
+.btnstatic{
+    min-width:100px;
+    max-width:150px;
+    width:40vw;
 }
 
 .fw100 {
@@ -395,6 +439,8 @@ a{
 .fw900 {
     font-weight: 900 !important;
 }
+
+/* 글자사이즈 */
 
 .fs-13 {
     font-size: 13px !important;
@@ -438,6 +484,9 @@ a{
 .fs-26 {
     font-size: 26px !important;
 }
+.fs-28 {
+    font-size: 28px !important;
+}
 .fs-30{
     font-size: 30px !important;
 }
@@ -447,13 +496,48 @@ a{
 .fs-35{
     font-size: 35px !important;
 }
+.fs-40{
+    font-size: 40px !important;
+}
+.fs-54{
+    font-size: 54px !important;
+}
+.fs-55{
+    font-size: 55px !important;
+}
+
+.pretext{
+    font-family: var(--font-family-kr) !important
+}
+
+.gmfont-m{
+    font-family: 'GSM' !important;
+}
+.gmfont-l{
+    font-family: 'GSL' !important;
+}
+.gmfont-b{
+    font-family: 'GSB' !important;
+}
 .bar{
     width: 1px;
     height: calc(100% - 3px);
     margin: auto 3px;  
 }
+.border-width-2{
+    border-width: 2px !important;
+}
+.line-height-0-8{
+    line-height: 0.8 !important;
+}
+.line-height-0-9{
+    line-height: 0.9 !important;
+}
 .line-height-1{
     line-height: 1 !important;
+}
+.line-height-1-2{
+    line-height: 1.2 !important;
 }
 .line-height-1-3{
     line-height: 1.3 !important;
@@ -461,9 +545,32 @@ a{
 .line-height-1-5{
     line-height: 1.5 !important;
 }
+.line-height-1-8{
+    line-height: 1.8 !important;
+}
+.line-height-2{
+    line-height: 2 !important;
+}
+.letter-spacing-0-5{
+    letter-spacing: -0.05em !important;
+}
 .w-0{
     width: 0 !important;
 }
+
+/* 데두리 색상 */
 .border-gray{
     border-color: #bababa !important;
+}
+.border-light-gray{
+    border-color: #dcdcde !important;
+}
+.border-dark-gray{
+    border-color: #747474 !important;
+}
+.border-dark{
+    border-color: #2a2a2a !important;
+}
+.text-justify {
+  text-align: justify;
 }
